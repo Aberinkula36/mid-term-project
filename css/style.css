@@ -1,0 +1,40 @@
+body{
+    font-family: 'araboto', sans-serif;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+#section-one{
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-two{
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.menu-two > ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-two > ul > li{
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-evenly;
+    margin-left: 100px;
+    margin-left: 100px;
+}
+
+.circle-logo{
+    justify-content: flex-start;
+}
