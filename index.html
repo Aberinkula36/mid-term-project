@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Circle</title>
   </head>
+
   <body>
     <!-- SECTION 1 -->
     <section id="section-one">
@@ -26,30 +27,41 @@
           </ul>
         </div>
         <div class="menu-three">
-          <span
-            ><a href="#contact-us"
-              ><button class="contact">Contact Us</button></a
-            ></span
-          >
+          <span><a href="#contact-us" class="contact">Contact Us</a></span>
         </div>
       </div>
     </section>
     <!-- SECTION 2 -->
     <section id="section-two">
       <div class="landing">
-        <h1>Empower Your Business With Stunning Design!</h1>
-        <p>
-          Circle is a digital design and development studio. We design and
-          develop astonishing websites and mobile apps.
-        </p>
-        <button class="contact">Get in touch</button>
-        <button class="work">See our work</button>
-        <img
-          src="project-assets/hero-section/hero-image.png"
-          alt="Hero image"
-        />
-        <img src="project-assets/hero-section/card-1.png" alt="Card 1" />
-        <img src="project-assets/hero-section/card-2.png" alt="Card 2" />
+        <div class="texto-landing">
+          <h1 class="big">Empower Your Business With Stunning Design!</h1>
+          <p class="description">
+            Circle is a digital design and development studio. We design and
+            develop astonishing websites and mobile apps.
+          </p>
+          <a href="contact-us.html"
+            ><span class="contact">Get in touch</span></a
+          >
+          <a href="#"><span class="work">See our work</span></a>
+        </div>
+        <div class="imagenes-landing">
+          <img
+            src="project-assets/hero-section/hero-image.png"
+            alt="Hero image"
+            class="imagen-hero"
+          />
+          <img
+            src="project-assets/hero-section/card-1.png"
+            alt="Card 1"
+            class="card1"
+          />
+          <img
+            src="project-assets/hero-section/card-2.png"
+            alt="Card 2"
+            class="card2"
+          />
+        </div>
       </div>
     </section>
     <!-- SECTION 3 -->
@@ -76,12 +88,12 @@
           <a href="simplify.html">Learn more</a>
         </div>
         <div class="box">
-          <img src="project-assets/projects-section/3.jpg" alt="Project 2" />
+          <img src="project-assets/projects-section/2.jpg" alt="Project 2" />
           <h3>Dashcoin</h3>
           <p>Web Development</p>
           <a href="">Learn more</a>
         </div>
-        <div class="box">
+        <div class="box-big">
           <img src="project-assets/projects-section/3.jpg" alt="Project 3" />
           <h3>Vectorify</h3>
           <p>User Experience Design</p>
@@ -92,24 +104,24 @@
     <!-- SECTION 5 -->
     <section id="section-five">
       <div class="testimonial">
-        <div class="file1">
+        <div class="fila1">
           <img
             src="project-assets/testimonial-section/memoji-1.png"
             alt="Testimony 1"
           />
-          <h2>Hear What Our Cleints Have to Say</h2>
+          <h2 class="testimonial-title">Hear What Our Clients Have to Say</h2>
           <img
             src="project-assets/testimonial-section/memoji-2.png"
             alt="Testimony 2"
           />
         </div>
-        <div class="file2">
+        <div class="fila2">
           <p class="testimony-quote">
-            "Circle helped us through every stage of our startup. We really
-            enjoyed working with you."
+            "Circle helped us through every stage of our startup. <br />
+            We really enjoyed working with you."
           </p>
         </div>
-        <div class="file3">
+        <div class="fila3">
           <img
             src="project-assets/testimonial-section/memoji-3.png"
             alt="Testimony 3"
@@ -119,8 +131,10 @@
               src="project-assets/testimonial-section/profile.png"
               alt="Kristin Watson avatar"
             />
-            <p>Kristin Watson</p>
-            <p>Booking.com</p>
+            <p class="name">
+              Kristin Watson <br />
+              <span class="company"> Booking.com</span>
+            </p>
           </div>
           <img
             src="project-assets/testimonial-section/memoji-4.png"
@@ -131,8 +145,8 @@
     </section>
     <!-- SECTION 6 -->
     <section id="section-six">
+      <h2>Our Services</h2>
       <div class="services">
-        <h2>Our Services</h2>
         <div class="folder">
           <img src="project-assets/services-section/icons/1.svg" alt="Pen" />
           <h3>User Interface Design</h3>
@@ -164,7 +178,7 @@
     </section>
     <!-- SECTION 7 -->
     <section id="section-seven">
-      <div id="questions">
+      <div class="questions">
         <h2>Do you have any questions?</h2>
         <p>Let us help you!</p>
         <form action="#">
@@ -179,17 +193,23 @@
       </div>
     </section>
     <footer>
-      <div class="linea1">
-        <img src="project-assets/logos/circle.svg" alt="Circle logo" />
-        <p>Team</p>
-        <p>Services</p>
-        <p>About Us</p>
-      </div>
-      <div class="linea2">
-        <p>2972 Westminster Rd. Santa Ana, Illinois 85486</p>
-        <p>Press</p>
-        <p>Projects</p>
-        <p>Privacy Policy</p>
+      <div id="container">
+        <div class="col1">
+          <img src="project-assets/logos/circle.svg" alt="Circle logo" />
+          <p>2972 Westminster Rd. Santa Ana, Illinois 85486</p>
+        </div>
+        <div class="col2">
+          <p>Team</p>
+          <p>Press</p>
+        </div>
+        <div class="col3">
+          <p>Services</p>
+          <p>Projects</p>
+        </div>
+        <div class="col4">
+          <p>About Us</p>
+          <p>Privacy Policy</p>
+        </div>
       </div>
     </footer>
   </body>
