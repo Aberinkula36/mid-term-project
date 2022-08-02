@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/index.js"></script>
     <title>Circle</title>
   </head>
 
@@ -19,8 +20,11 @@
             alt="Circle logo"
           />
         </div>
-        <div class="menu-two">
-          <ul>
+        <div class="hamburguer-menu">
+          <p onclick="toggleMenu()"><img src="project-assets/Hamburger_icon.svg" alt="Hamburguer Menu" class="hamburguer"></p>
+        </div>
+        <div class="menu-two">   
+          <ul id="menu-box">
             <li><a href="#">Home</a></li>
             <li><a href="#section-four">Projects</a></li>
             <li><a href="#section-six">Services</a></li>
@@ -40,10 +44,12 @@
             Circle is a digital design and development studio. We design and
             develop astonishing websites and mobile apps.
           </p>
-          <a href="contact-us.html"
-            ><span class="contact">Get in touch</span></a
-          >
-          <a href="#"><span class="work">See our work</span></a>
+          <div class="get-work">
+            <a href="contact-us.html"
+              ><span class="contact">Get in touch</span></a
+            >
+            <a href="#"><span class="work">See our work</span></a>
+          </div>
         </div>
         <div class="imagenes-landing">
           <img
@@ -94,7 +100,7 @@
           <a href="">Learn more</a>
         </div>
         <div class="box-big">
-          <img src="project-assets/projects-section/3.jpg" alt="Project 3" />
+          <img src="project-assets/projects-section/3.jpg" class="cropped-image" alt="Project 3" />
           <h3>Vectorify</h3>
           <p>User Experience Design</p>
           <a href="">Learn more</a>
@@ -124,7 +130,7 @@
         <div class="fila3">
           <img
             src="project-assets/testimonial-section/memoji-3.png"
-            alt="Testimony 3"
+            alt="Testimony 3" class="foto3"
           />
           <div class="testimony-avatar">
             <img
@@ -136,6 +142,10 @@
               <span class="company"> Booking.com</span>
             </p>
           </div>
+          <img
+            src="project-assets/testimonial-section/memoji-3.png"
+            alt="Testimony 3" class="foto2"
+          />
           <img
             src="project-assets/testimonial-section/memoji-4.png"
             alt="Testimony 4"
@@ -181,7 +191,7 @@
       <div class="questions">
         <h2>Do you have any questions?</h2>
         <p>Let us help you!</p>
-        <form action="#">
+        <form action="#" class="formulario">
           <input
             type="email"
             name="email"

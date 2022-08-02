@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <title>Contact Us</title>
   </head>
   <body>
@@ -32,18 +32,51 @@
     </section>
     <!-- SECTION 8 -->
     <section id="section-eight">
-        <div class="contact-us-form">
-            <h1>Contact Us</h1>
+      <div class="contact-use">
+        <form class="contact-us-form">
+          <h1>Contact Us</h1>
+          <p>
             <label for="name">Full Name *</label>
-            <input type="text" id="name" name="name" placeholder="Enter your full name">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Enter your email address">
-            <label for="phone">Phone</label>
-            <input type="number" name="phone" id="phone" placeholder="Enter your phone number">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your full name"
+            />
+          </p>
+          <div class="columnas">
+            <p>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email-contact"
+                id="email-contact"
+                placeholder="Enter your email address"
+              />
+            </p>
+            <p>
+              <label for="phone">Phone</label>
+              <input
+                type="number"
+                name="phone"
+                id="phone"
+                placeholder="Enter your phone number"
+              />
+            </p>
+          </div>
+          <p>
             <label for="message">Message</label>
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Write your message here..."></textarea>
-            <input type="button" value="Submit">
-        </div>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Write your message here..."
+            ></textarea>
+          </p>
+          <input type="button" class="submit-button" value="Submit" />
+        </form>
+      </div>
     </section>
     <footer>
       <div id="container">
