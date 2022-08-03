@@ -51,6 +51,13 @@ p {
     transition: 0.3s;
 }
 
+.menu-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
 .contact {
     background-color: #072AC8;
     color: #F2F4FC;
@@ -566,8 +573,11 @@ textarea {
         justify-content: center;
     }
 
-    .contact,
-    .work {
+    .menu-three{
+        display: none;
+    }
+
+    .contact, .work {
         font-size: 30px;
     }
 
