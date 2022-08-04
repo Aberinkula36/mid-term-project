@@ -5,3 +5,6 @@ hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
 })
+
+const d = new Date();
+document.getElementById("fecha").innerHTML = d;
