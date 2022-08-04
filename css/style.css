@@ -51,11 +51,25 @@ p {
     transition: 0.3s;
 }
 
-.menu-box{
+.nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 60px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    background-color: black;
 }
 
 .contact {
@@ -227,7 +241,7 @@ img {
     line-height: 30px;
 }
 
-.foto2{
+.foto2 {
     visibility: hidden;
 }
 
@@ -451,6 +465,7 @@ textarea {
     background-color: rgb(221, 221, 221);
     font-family: "araboto", sans-serif;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .submit-button {
@@ -488,11 +503,11 @@ textarea {
     color: #6b708d;
 }
 
-.hamburguer-menu{
+.hamburguer-menu {
     visibility: hidden;
 }
 
-@media (min-width: 100px) and (max-width: 1024px) {
+@media (min-width: 100px) and (max-width: 1140px) {
     body {
         width: 100%;
         padding-left: 70px;
@@ -509,7 +524,7 @@ textarea {
         margin-bottom: 20px;
     }
 
-    .menu-two, .menu.three{
+    .menu-two, .menu.three {
         display: block;
     }
 
@@ -573,7 +588,7 @@ textarea {
         justify-content: center;
     }
 
-    .menu-three{
+    .menu-three {
         display: none;
     }
 
@@ -594,41 +609,41 @@ textarea {
         margin-bottom: 20px;
     }
 
-    #partners > img{
+    #partners>img {
         margin-bottom: 50px;
         width: 40%;
     }
 
-    #section-four{
+    #section-four {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    #section-four > h2{
+    #section-four>h2 {
         font-size: 300%;
     }
 
-    .projects{
+    .projects {
         flex-direction: column;
         align-items: center;
     }
 
-    .box{
+    .box {
         font-size: 30px;
         width: 500px;
         height: 660px;
         margin-top: 40px;
     }
 
-    .box-big{
+    .box-big {
         font-size: 30px;
         width: 500px;
         height: 510px;
         margin-top: 40px;
     }
 
-    .box-big > img{
+    .box-big>img {
         width: 500px;
     }
 
@@ -637,7 +652,7 @@ textarea {
         font-size: 40px;
         text-align: center;
     }
-    
+
     .testimonial>div {
         display: flex;
         flex-direction: column;
@@ -651,65 +666,65 @@ textarea {
         font-size: 20px;
     }
 
-    .foto2{
+    .foto2 {
         visibility: visible;
     }
 
-    .foto3{
+    .foto3 {
         visibility: hidden;
     }
 
-    .testimony-avatar{
+    .testimony-avatar {
         margin-top: -300px;
     }
 
-    #section-six{
+    #section-six {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    #section-six > h2{
+    #section-six>h2 {
         font-size: 300%;
     }
 
-    .services{
+    .services {
         flex-direction: column;
         align-items: center;
     }
 
-    .folder{
+    .folder {
         font-size: 30px;
         width: 100%;
         height: 480px;
         margin-top: 40px;
     }
 
-    .questions{
+    .questions {
         display: flex;
         width: 100%;
     }
 
-    .formulario{
+    .formulario {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    #section-seven{
+    #section-seven {
         min-width: 60%;
     }
 
-    .questions > h2{
+    .questions>h2 {
         font-size: 40px;
         text-align: center;
     }
 
-    .questions > p{
+    .questions>p {
         font-size: 30px;
     }
 
-    .questions > form > input{
+    .questions>form>input {
         font-size: 20px;
         margin-top: 20px;
     }
@@ -720,71 +735,125 @@ textarea {
         font-size: 20px;
         margin-left: -40px;
     }
-    
-    #container > div {
+
+    #container>div {
         font-size: 30px;
         text-align: center;
     }
 
-    .col1 > img {
+    .col1>img {
         width: 120px;
     }
 
-    .simplify-article > p {
+    .simplify-article>p {
         font-size: 20px;
     }
 
-    .simplify > h1{
+    .simplify>h1 {
         font-size: 300%;
         text-align: center;
     }
 
-    .menu-three{
+    .menu-three {
         visibility: hidden;
     }
 
-    .contact-us-form > h1{
+    .contact-us-form>h1 {
         margin-top: -50px;
         font-size: 300%;
         text-align: center;
     }
 
-    .contact-us-form > p > label{
+    .contact-us-form>p>label {
         font-size: 200%;
         text-align: center;
     }
 
-    .contact-us-form > p > input{
+    .contact-us-form>p>input {
         font-size: 150%;
         text-align: center;
     }
 
-    .columnas{
+    .columnas {
         display: flex;
         flex-direction: column;
         text-align: center;
     }
 
-    .columnas > p > label{
+    .columnas>p>label {
         font-size: 200%;
         text-align: center;
     }
-    
-    .columnas > p > input{
+
+    .columnas>p>input {
         font-size: 150%;
         text-align: center;
     }
 
-    textarea{
+    textarea {
         font-size: 150%;
     }
 
-    .submit-button{
-        font-size: 200%;;
+    .submit-button {
+        font-size: 200%;
     }
 
-    .hamburguer{
-        visibility: visible;
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -120%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        margin-left: -15px;
+        justify-content: center;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 5px 0;
+        font-size: 30px;
+        background-color: lightblue;
+        color: white;
+        width: 100%;
+
+    }
+
+    #section-two{
+        margin-top: 300px;
+    }
+
+    .nav-item{
+        color: white;
+        padding: 20px;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .simplify{
+        margin-top: 280px;
+    }
+
+    .contact-us{
+        margin-top: 350px;
     }
 }
 
@@ -796,12 +865,12 @@ textarea {
         align-items: center;
     }
 
-    .get-work > a {
+    .get-work>a {
         display: flex;
         margin-top: -30px;
     }
 
-    .texto-landing{
+    .texto-landing {
         margin-top: -80px;
     }
 
@@ -811,7 +880,11 @@ textarea {
         margin-bottom: 30px;
     }
 
-    .simplify-article > p {
+    .simplify-article>p {
         font-size: 20px;
+    }
+
+    .landing{
+        margin-top: 280px;;
     }
 }
