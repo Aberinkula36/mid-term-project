@@ -39,17 +39,27 @@
       <!-- SECTION 8 -->
       <section id="section-eight">
         <div class="contact-us">
-          <form class="contact-us-form">
+          <form
+            action=""
+            class="contact-us-form"
+            id="formulario"
+            name="contact-us-form"
+            action="#"
+            onsubmit="return validateForm()"
+            method="post"
+          >
             <h1>Contact Us</h1>
-            <p>
-              <label for="name">Full Name *</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Enter your full name"
-              />
-            </p>
+            <div id="grupo_name">
+              <p>
+                <label for="name">Full Name *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your full name"
+                />
+              </p>
+            </div>
             <div class="columnas">
               <p>
                 <label for="email">Email</label>
@@ -80,7 +90,7 @@
                 placeholder="Write your message here..."
               ></textarea>
             </p>
-            <input type="button" class="submit-button" value="Submit" />
+            <input type="submit" class="submit-button" value="Submit" />
           </form>
         </div>
       </section>

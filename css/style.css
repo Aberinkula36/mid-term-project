@@ -472,6 +472,13 @@ img {
     margin-bottom: 5px;
 }
 
+.contact-us-form>div>p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    color: black;
+}
+
 .contact-us-form>p {
     display: flex;
     flex-direction: column;
@@ -479,7 +486,7 @@ img {
     color: black;
 }
 
-.contact-us-form>p>input {
+.contact-us-form>div>p>input {
     border: none;
     background-color: rgb(221, 221, 221);
     padding: 15px;
@@ -540,6 +547,20 @@ textarea {
 
 .hamburguer-menu {
     visibility: hidden;
+}
+
+.contact-us-form_grupo-incorrecto{
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: red;
+    padding: 5px;
+}
+
+.contact-us-form_grupo-correcto{
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: green;
+    padding: 5px;
 }
 
 @media (min-width: 100px) and (max-width: 1127px) {
