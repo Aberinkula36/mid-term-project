@@ -13,11 +13,12 @@
       <section id="section-one">
         <div class="header">
           <div class="menu-one">
-            <img
-              src="project-assets/logos/circle.svg"
-              class="circle-logo"
-              alt="Circle logo"
-            />
+            <a href="index.html"
+              ><img
+                src="project-assets/logos/circle.svg"
+                class="circle-logo"
+                alt="Circle logo"
+            /></a>
           </div>
           <div class="hamburger">
             <span class="bar"></span>
@@ -44,33 +45,31 @@
             class="contact-us-form"
             id="formulario"
             name="contact-us-form"
-            action="#"
-            onsubmit="return validateForm()"
-            method="post"
           >
             <h1>Contact Us</h1>
             <div id="grupo_name">
               <p>
-                <label for="name">Full Name *</label>
+                <label for="name" class="name-contact">Full Name *</label>
                 <input
                   type="text"
                   id="name"
                   name="name"
                   placeholder="Enter your full name"
+                  required
                 />
               </p>
             </div>
-            <div class="columnas">
+            <div class="columnas" id="columnas">
               <p>
                 <label for="email">Email</label>
                 <input
                   type="email"
-                  name="email-contact"
+                  name="email"
                   id="email-contact"
                   placeholder="Enter your email address"
                 />
               </p>
-              <p>
+              <p id="columnas">
                 <label for="phone">Phone</label>
                 <input
                   type="number"
@@ -90,7 +89,13 @@
                 placeholder="Write your message here..."
               ></textarea>
             </p>
-            <input type="submit" class="submit-button" value="Submit" />
+            <p id="demo"></p>
+            <input
+              type="submit"
+              onclick="myFunction()"
+              class="submit-button"
+              value="Submit"
+            />
           </form>
         </div>
       </section>
