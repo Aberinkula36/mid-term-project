@@ -3,7 +3,7 @@ body {
     background-color: #ECF7FF;
 }
 
-.container{
+.container {
     margin-left: 80px;
     margin-right: 80px;
 }
@@ -16,7 +16,7 @@ p {
     color: #6B708D;
 }
 
-h2{
+h2 {
     margin-left: 80px;
 }
 
@@ -92,7 +92,7 @@ h2{
     transition: 0.3s;
 }
 
-#section-two{
+#section-two {
     margin-left: 80px;
     margin-right: 80px;
 }
@@ -260,7 +260,7 @@ img {
     justify-content: space-between;
 }
 
-.fila3 > img:last-child{
+.fila3>img:last-child {
     margin-left: -400px;
 }
 
@@ -353,7 +353,7 @@ img {
     color: #292E47;
 }
 
-.questions > h2{
+.questions>h2 {
     margin-left: 0px;
 }
 
@@ -396,7 +396,7 @@ img {
     padding: 0px 0px 50px 50px;
 }
 
-#section-eight{
+#section-eight {
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -409,7 +409,7 @@ img {
     padding: 20px 0px 50px 0px;
 }
 
-.col1 > p{
+.col1>p {
     margin-left: -50px;
 }
 
@@ -552,19 +552,19 @@ textarea {
     visibility: hidden;
 }
 
-.name-contact{
+.name-contact {
     color: #6b708d;
     margin-bottom: 10px;
 }
 
-.contact-us-form_grupo-incorrecto{
+.contact-us-form_grupo-incorrecto {
     border: 2px solid white;
     border-radius: 5px;
     background-color: lightcoral;
     padding: 10px;
 }
 
-.contact-us-form_grupo-correcto{
+.contact-us-form_grupo-correcto {
     border: 2px solid white;
     border-radius: 5px;
     background-color: lightgreen;
@@ -577,11 +577,11 @@ textarea {
         margin-right: 30px;
     }
 
-    h2{
+    h2 {
         margin-left: 0px;
     }
-    
-    #section-one{
+
+    #section-one {
         align-items: center;
     }
 
@@ -611,7 +611,7 @@ textarea {
         color: #6B708D;
     }
 
-    .menu-two{
+    .menu-two {
         width: 100%;
     }
 
@@ -634,7 +634,7 @@ textarea {
         margin-left: 20px;
     }
 
-    #section-two{
+    #section-two {
         margin-left: 0px;
         margin-right: 0px;
     }
@@ -674,7 +674,8 @@ textarea {
         display: none;
     }
 
-    .contact, .work {
+    .contact,
+    .work {
         font-size: 30px;
     }
 
@@ -727,15 +728,15 @@ textarea {
         margin-top: 40px;
     }
 
-    .box > h3 {
+    .box>h3 {
         font-size: 25px;
     }
 
-    .box > p {
+    .box>p {
         font-size: 20px;
     }
 
-    .box > a {
+    .box>a {
         font-size: 20px;
     }
 
@@ -760,12 +761,12 @@ textarea {
         font-size: 25px;
         padding-left: 0px;
     }
-    
+
     .box-big>p {
         font-size: 20px;
         padding-left: 0px;
     }
-    
+
     .box-big>a {
         font-size: 20px;
         padding-left: 0px;
@@ -798,7 +799,7 @@ textarea {
         visibility: hidden;
     }
 
-    .fila3 > img:last-child{
+    .fila3>img:last-child {
         margin-left: 0px;
     }
 
@@ -807,7 +808,8 @@ textarea {
         margin-left: -20px;
         display: flex;
         flex-direction: column;
-        align-items: center;;
+        align-items: center;
+        ;
     }
 
     #section-six {
@@ -832,15 +834,15 @@ textarea {
         margin-top: 40px;
     }
 
-    .folder > h3 {
+    .folder>h3 {
         font-size: 25px;
     }
 
-    .folder > p {
+    .folder>p {
         font-size: 20px;
     }
 
-    .folder > a {
+    .folder>a {
         font-size: 20px;
     }
 
@@ -849,7 +851,7 @@ textarea {
         width: 100%;
     }
 
-    #section-eight{
+    #section-eight {
         margin-left: 0px;
         margin-right: 0px;
     }
@@ -869,7 +871,7 @@ textarea {
         text-align: center;
     }
 
-    .questions{
+    .questions {
         width: 100%;
     }
 
@@ -896,7 +898,7 @@ textarea {
         margin-right: 0px;
     }
 
-    #container-footer > p{
+    #container-footer>p {
         margin-left: 0px;
         margin-right: 0px;
     }
@@ -909,7 +911,7 @@ textarea {
         width: 100px;
     }
 
-    .col1 > p{
+    .col1>p {
         margin-left: 0px;
     }
 
@@ -942,7 +944,7 @@ textarea {
         text-align: center;
     }
 
-    #grupo_name{
+    #grupo_name {
         text-align: center;
         font-size: 20px;
     }
@@ -1004,7 +1006,7 @@ textarea {
         width: 100%;
     }
 
-    .nav-item{
+    .nav-item {
         color: white;
         padding: 20px;
     }
@@ -1013,18 +1015,18 @@ textarea {
         left: 0;
     }
 
-    .simplify{
+    .simplify {
         margin-top: 40px;
     }
 
-    .contact-us{
+    .contact-us {
         margin-top: 70px;
     }
 
     #container-footer>div>p {
         padding: 0px 0px 0px 0px;
     }
-    
+
     .col1>img {
         padding: 0px;
     }
@@ -1076,8 +1078,9 @@ textarea {
         font-size: 20px;
     }
 
-    .landing{
-        margin-top: 80px;;
+    .landing {
+        margin-top: 80px;
+        ;
     }
 
     .box {
@@ -1107,16 +1110,16 @@ textarea {
     .box-big>h3 {
         padding-left: 0px;
     }
-    
+
     .box-big>p {
         padding-left: 0px;
     }
-    
+
     .box-big>a {
         padding-left: 0px;
     }
 
-    .services{
+    .services {
         width: 100%;
     }
 
@@ -1127,7 +1130,7 @@ textarea {
         margin-top: 40px;
     }
 
-    .folder > h3{
+    .folder>h3 {
         font-size: 20px;
     }
 }

@@ -33,7 +33,7 @@ const validarFormulario = (e) => {
         document
           .getElementById("grupo_name")
           .classList.remove("contact-us-form_grupo-incorrecto");
-          isnamevalid = true;
+        isnamevalid = true;
       } else {
         document
           .getElementById("grupo_name")
@@ -41,7 +41,7 @@ const validarFormulario = (e) => {
         document
           .getElementById("grupo_name")
           .classList.remove("contact-us-form_grupo-correcto");
-          isnamevalid = false;
+        isnamevalid = false;
       }
       break;
     case "email":
@@ -52,7 +52,7 @@ const validarFormulario = (e) => {
         document
           .getElementById("columnas")
           .classList.remove("contact-us-form_grupo-incorrecto");
-          isemailvalid = true;
+        isemailvalid = true;
       } else {
         document
           .getElementById("columnas")
@@ -60,7 +60,7 @@ const validarFormulario = (e) => {
         document
           .getElementById("columnas")
           .classList.remove("contact-us-form_grupo-correcto");
-          isemailvalid = false;
+        isemailvalid = false;
       }
       break;
     case "phone":
@@ -71,7 +71,7 @@ const validarFormulario = (e) => {
         document
           .getElementById("columnas")
           .classList.remove("contact-us-form_grupo-incorrecto");
-          isphonevalid = true;
+        isphonevalid = true;
       } else {
         document
           .getElementById("columnas")
@@ -79,7 +79,7 @@ const validarFormulario = (e) => {
         document
           .getElementById("columnas")
           .classList.remove("contact-us-form_grupo-correcto");
-          isphonevalid = false;
+        isphonevalid = false;
       }
       break;
   }
@@ -101,9 +101,11 @@ const element = document.getElementById("myButton");
 element.addEventListener("click", myFunction);
 
 function myFunction() {
-  if (isnamevalid && isemailvalid && isphonevalid === true){
-    document.getElementById("button").innerHTML = "Has enviado correctamente el formulario!";
-  }else{
-    document.getElementById("button").innerHTML = "Por favor, rellena los campos para enviar la información";
+  if (isnamevalid && isemailvalid && isphonevalid === true) {
+    document.getElementById("button").innerHTML =
+      "Has enviado correctamente el formulario!";
+  } else {
+    document.getElementById("button").innerHTML =
+      "Por favor, rellena los campos para enviar la información";
   }
 }
