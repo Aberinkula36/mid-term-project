@@ -518,6 +518,10 @@ textarea {
     color: black;
 }
 
+#button {
+    font-weight: bold;
+}
+
 .columnas {
     display: flex;
     justify-content: space-between;
@@ -565,10 +569,6 @@ textarea {
     border-radius: 5px;
     background-color: lightgreen;
     padding: 10px;
-}
-
-#myP{
-    visibility: hidden;
 }
 
 @media (min-width: 100px) and (max-width: 1127px) {

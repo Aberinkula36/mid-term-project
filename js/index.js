@@ -7,16 +7,22 @@ hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
 
-const formulario = document.getElementById("formulario");
+//Creamos la constante "inputs", que nos servirá para validar lo que escribe el usuario en el formulario
 const inputs = document.querySelectorAll("#formulario input");
 
+//Validación formato campos formulario
 const expresiones = {
   name: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
   email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
   phone: /^\d{7,14}$/,
 };
+
+//Declaramos las variables que nos permitirán validar cada campo del formulario
 let isnamevalid;
-//Validación campos formulario
+let isemailvalid;
+let isphonevalid;
+
+//Validación visual y en directo de los campos formulario con colores
 const validarFormulario = (e) => {
   switch (e.target.name) {
     case "name":
@@ -46,6 +52,7 @@ const validarFormulario = (e) => {
         document
           .getElementById("columnas")
           .classList.remove("contact-us-form_grupo-incorrecto");
+          isemailvalid = true;
       } else {
         document
           .getElementById("columnas")
@@ -53,6 +60,7 @@ const validarFormulario = (e) => {
         document
           .getElementById("columnas")
           .classList.remove("contact-us-form_grupo-correcto");
+          isemailvalid = false;
       }
       break;
     case "phone":
@@ -63,6 +71,7 @@ const validarFormulario = (e) => {
         document
           .getElementById("columnas")
           .classList.remove("contact-us-form_grupo-incorrecto");
+          isphonevalid = true;
       } else {
         document
           .getElementById("columnas")
@@ -70,26 +79,31 @@ const validarFormulario = (e) => {
         document
           .getElementById("columnas")
           .classList.remove("contact-us-form_grupo-correcto");
+          isphonevalid = false;
       }
       break;
   }
 };
 
+//Comportamiento de los campos del formulario según el comportamiento del ratón/teclado
 inputs.forEach((input) => {
   input.addEventListener("keyup", validarFormulario);
   input.addEventListener("blur", validarFormulario);
 });
 
+//Cancelamos el comportamiento habitual del botón "submit", de manera que el usuario ve como queda su información en el momento de enviarse y no pasa a una siguiente URL o ve un pop-up window con un mensaje
 formulario.addEventListener("submit", (e) => {
   e.preventDefault();
 });
 
-//addEventListener
+//Validación campos formulario
+const element = document.getElementById("myButton");
+element.addEventListener("click", myFunction);
+
 function myFunction() {
-  var existe = document.getElementById("email-contact");
-  if(!existe){
-    console.log("No existe");
+  if (isnamevalid && isemailvalid && isphonevalid === true){
+    document.getElementById("button").innerHTML = "Has enviado correctamente el formulario!";
   }else{
-    console.log("Existe");
+    document.getElementById("button").innerHTML = "Por favor, rellena los campos para enviar la información";
   }
 }
