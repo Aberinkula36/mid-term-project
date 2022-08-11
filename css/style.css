@@ -4,8 +4,8 @@ body {
 }
 
 .container {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 180px;
+    margin-right: 180px;
 }
 
 a {
@@ -16,9 +16,7 @@ p {
     color: #6B708D;
 }
 
-h2 {
-    margin-left: 80px;
-}
+
 
 #section-one {
     margin-top: 20px;
@@ -29,8 +27,6 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 50px;
-    margin-right: 50px;
 }
 
 .menu-two {
@@ -47,8 +43,6 @@ h2 {
     color: #6B708D;
     text-decoration: none;
     list-style: none;
-    margin-left: 100px;
-    margin-left: 100px;
 }
 
 .menu-two>ul>li>a {
@@ -92,11 +86,6 @@ h2 {
     transition: 0.3s;
 }
 
-#section-two {
-    margin-left: 80px;
-    margin-right: 80px;
-}
-
 .landing {
     display: flex;
     flex-direction: row;
@@ -108,6 +97,7 @@ h2 {
 .texto-landing {
     flex: 1;
     align-self: center;
+    margin-right: 100px;
 }
 
 .big {
@@ -120,7 +110,6 @@ h2 {
 
 .work {
     color: #6B708D;
-    margin-left: 20px;
 }
 
 .work:hover {
@@ -271,7 +260,6 @@ img {
 .testimony-avatar {
     font-size: 12px;
     display: flex;
-    margin-left: 100px;
 }
 
 .testimony-avatar>p {
@@ -392,17 +380,10 @@ img {
 
 #container-footer {
     display: flex;
-    margin-left: 120px;
-    margin-right: 120px;
 }
 
 #container-footer>div>p {
     padding: 0px 0px 50px 50px;
-}
-
-#section-eight {
-    margin-left: 100px;
-    margin-right: 100px;
 }
 
 .col1 {
@@ -648,8 +629,12 @@ textarea {
         flex-direction: column;
     }
 
+    .texto-landing {
+        margin-right: 0px;
+        text-align: center;
+    }
+
     .texto-landing>a {
-        background-color: pink;
         display: flex;
         justify-content: center;
         text-align: center;
@@ -1069,6 +1054,8 @@ textarea {
 
     .texto-landing {
         margin-top: -80px;
+        margin-right: 0px;
+        text-align: center;
     }
 
     .work {
