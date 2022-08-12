@@ -1022,10 +1022,6 @@ textarea {
 }
 
 @media (min-width: 100px) and (max-width: 560px) {
-    .container {
-        margin-left: 60px;
-    }
-
     .get-work {
         display: flex;
         flex-direction: column;
